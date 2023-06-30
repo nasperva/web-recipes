@@ -13,7 +13,7 @@ app.get("/", function(req, res) {
 
 app.post("/", function(req, res) {      //* kullanıcının girdiği bilgilere göre kalibre
     const query = req.body.cityName;
-    const apiKey = "1a3cf695e92a35bd9020523a26972071"
+    const apiKey = "openweatherapi"
     const unit = "metric"
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" +query + "&appid=" + apiKey+ "&units=" + unit;
 
